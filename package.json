@@ -1,11 +1,27 @@
 {
   "name": "browserify-autoprefixer",
   "version": "1.0.0",
-  "description": "",
+  "description": "Browserify plugin for autoprefixer",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "make test"
   },
-  "author": "",
-  "license": "ISC"
+  "repository": "git://github.com/jsedlacek/browserify-sass.git",
+  "author": "Jakub Sedlacek",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer-core": "^5.1.5",
+    "through2": "^0.6.3"
+  },
+  "keywords": [
+    "browserify-plugin",
+    "autoprefixer"
+  ],
+  "devDependencies": {
+    "browserify": "^8.1.3",
+    "chai": "^2.0.0",
+    "concat-stream": "^1.4.7",
+    "mocha": "^2.1.0",
+    "partialify": "^3.1.3"
+  }
 }
