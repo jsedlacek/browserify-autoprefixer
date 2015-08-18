@@ -10,7 +10,9 @@
   "author": "Jakub Sedlacek",
   "license": "ISC",
   "dependencies": {
+    "autoprefixer": "^5.2.0",
     "autoprefixer-core": "^5.1.5",
+    "postcss": "^4.1.16",
     "through2": "^0.6.3"
   },
   "keywords": [

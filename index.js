@@ -1,5 +1,6 @@
 var path = require('path');
 var through = require('through2');
+var postcss = require('postcss');
 var autoprefixer = require('autoprefixer-core');
 
 var extensions = ['.css', '.sass', '.scss', '.less'];
@@ -16,7 +17,7 @@ module.exports = function (b, opts) {
   }
 
   function end() {
-    this.push(autoprefixer.process(input).css);
+    this.push(postcss([autoprefixer]).process(input).css);
     this.push(null);
   }
 
